@@ -1,0 +1,218 @@
+header {
+    padding-bottom: 50px;
+    transition-duration: .6s;
+}
+
+.header__wrapper {
+    padding: 40px 120px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__social {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.header__decor {
+    display: block;
+    width: 2px;
+    height: 191px;
+    background-color: var(--color);
+}
+
+.header__social-list {
+    position: absolute;
+    top: 194px;
+    left: -14px;
+    width: 32px;
+}
+
+.header__social-item {
+    margin-bottom: 8px;
+}
+
+.header__social-item:last-child {
+    margin-bottom: 0;
+}
+
+.header__social-link > svg > path {
+    transition-duration: .2s;
+    transition-property: fill;
+}
+
+.header__social-link > svg > path:hover{
+    fill: var(--my-pink);
+}
+
+.header__logo-name {
+    color: var(--my-white);
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+}
+
+.header__logo-name:before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/logo2.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    top: -7px;
+    left: -59px;
+}
+
+.header__navigation-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__navigation-link {
+    color: var(--color);
+    transition-duration: .4s;
+    transition-property: color;
+}
+
+.header__navigation-link > span {
+    color: var(--my-pink);
+    font-size: 18px;
+}
+
+.header__navigation-link:hover {
+    color: var(--my-white);
+    font-weight: 700;
+}
+
+
+@media (max-width: 1024px) {
+    .header__wrapper {
+        padding: 40px 40px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .header.open {
+        padding-bottom: 270px;
+        transition-duration: .6s;
+        transition-property: padding-bottom;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    .header__social {
+        display: none;
+    }
+
+    .header__navigation {
+        position: absolute;
+        top: 120px;
+        transform: translateX(-250%);
+        transition-duration: .6s;
+        transition-property: transform;
+    }
+
+    .header__navigation-list {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .header__navigation-link {
+        font-size: 32px;
+    }
+
+    .header__burger-btn:nth-child(1) {
+        width: 22px;
+        height: 2px;
+        background-color: var(--color);
+        display: block;
+        transform: translateY(8px);
+        transition-duration: .4s;
+        transition-property: transform;
+    }
+
+    .header__burger-btn:nth-child(2) {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: var(--color);
+        transform: translateY(-8px);
+        transition-duration: .4s;
+        transition-property: transform;
+    }
+
+     .header.open .header__burger span:nth-child(1) {
+        width: 35px;
+        height: 2px;
+        background-color: var(--color);
+        display: block;
+        transform: translateY(2px) rotate(45deg);
+         transition-duration: .4s;
+         transition-property: transform;
+    }
+
+     .header.open .header__burger span:nth-child(2) {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: var(--color);
+        transform: translateY(0) rotate(-45deg);
+         transition-duration: .4s;
+         transition-property: transform;
+    }
+
+    .header.open .header__navigation {
+        transform: translateX(24%);
+    }
+
+    .header__logo-name:before {
+        background-image: url("../img/logo600.svg");
+        width: 16px;
+        height: 17px;
+        top: 5px;
+        left: -21px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__wrapper {
+        padding: 50px 15px 0;
+    }
+
+    .header__logo-name {
+        font-size: 18px;
+    }
+
+    .header__logo-name:before {
+        background-image: url(../img/logo400.svg);
+        width: 16px;
+        height: 17px;
+        top: 5px;
+        left: -25px;
+    }
+
+    .projects__title {
+        font-size: 16px;
+    }
+
+    .projects__title:after {
+        top: 9px;
+        left: 97px;
+        width: 60px;
+    }
+
+    .projects__wrapper:before {
+        left: -33px;
+    }
+
+    .projects__wrapper:after {
+        right: -40px;
+    }
+}
+
+

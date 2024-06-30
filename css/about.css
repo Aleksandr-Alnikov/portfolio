@@ -1,0 +1,164 @@
+.about__wrapper {
+    padding: 0 120px 0;
+}
+
+.about__wrapper:before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 155px;
+    border: 1px solid var(--color);
+    left: -1px;
+    top: 1980px;
+}
+
+.about__wrapper:after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/frame7.svg");
+    width: 103px;
+    height: 103px;
+    right: -24px;
+    top: 2241px;
+}
+
+.about__title {
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 23px;
+}
+
+.about__title > span {
+    color: var(--my-pink);
+}
+
+.about__title:after {
+    position: absolute;
+    content: "";
+    width: 326px;
+    height: 2px;
+    background-color: var(--my-pink);
+    top: 20px;
+    left: 190px;
+}
+
+.about__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    max-width: 570px;
+}
+
+.about__info > p {
+    font-weight: 400;
+    line-height: 1.62;
+    margin-bottom: 27px;
+    color: var(--color);
+}
+
+.about__btn {
+    font-weight: 500;
+    color: var(--my-white);
+    padding: 8px 16px;
+    border: 1px solid var(--my-pink);
+    transition-duration: .2s;
+    transition-property: background-color;
+}
+
+.about__btn:hover {
+    background-color: rgba(199, 120, 221, 0.2);
+}
+
+.about__bg {
+    position: relative;
+    background: url("../img/Dots.svg") left 14% no-repeat,
+                url("../img/frame6.svg") right 65% no-repeat,
+                url("../img/about.png") right no-repeat;
+    height: 507px;
+    width: 339px;
+}
+
+.about__bg:before {
+    position: absolute;
+    content: "";
+    width: 271px;
+    height: 1px;
+    background-color: var(--my-pink);
+    left: 49px;
+    bottom: 0;
+}
+
+
+@media (max-width: 1600px) {
+    .about__wrapper {
+        padding: 0 40px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about__info {
+        max-width: 509px;
+    }
+
+    .about__bg:before {
+        left: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__info {
+        max-width: 256px;
+    }
+
+    .about__info > p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__title {
+        font-size: 24px;
+    }
+
+    .about__title:after {
+        width: 179px;
+        top: 14px;
+        left: 145px;
+    }
+
+    .about__info {
+        margin: 0 auto;
+        max-width: 410px;
+    }
+
+    .about__bg {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__wrapper {
+        padding: 0;
+    }
+
+    .about__wrapper:before {
+        left: -37px;
+    }
+
+    .about__wrapper:after {
+        right: -82px;
+    }
+
+    .about__btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+

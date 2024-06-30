@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="preload" href="fonts/fira-code-v22-cyrillic_latin-regular.woff2" type="font/woff2" as="font"
+          crossorigin="">
+    <link rel="preload" href="fonts/fira-code-v22-cyrillic_latin-300.woff2" as="font"
+          crossorigin="">
+    <link rel="preload" href="fonts/fira-code-v22-cyrillic_latin-500.woff2" type="font/woff2" as="font"
+          crossorigin="">
+    <link rel="preload" href="fonts/fira-code-v22-cyrillic_latin-600.woff2" as="font"
+          crossorigin="">
+    <link rel="preload" href="fonts/fira-code-v22-cyrillic_latin-700.woff2" type="font/woff2" as="font"
+          crossorigin="">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="scripts/index.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__container container">
+        <div class="header__wrapper">
+            <div class="header__social">
+                <span class="header__decor"></span>
+                <ul class="header__social-list">
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794
+                            25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425
+                            12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743
+                            8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949
+                            9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334
+                            13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769
+                            9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931
+                            9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113
+                            11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488
+                            12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656
+                            20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125
+                            25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428
+                            23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5
+                            6Z" fill="#ABB2BF"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <svg width="32" height="20" viewBox="0 0 25 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.1641 1.65906C19.543 0.878258 17.8325 0.320987 16.0751 0.00113909C16.0592
+                                -0.00167518 16.0428 0.000755409 16.0283 0.00809674C16.0137 0.0154381 16.0017 0.0273296
+                                15.9938 0.0421361C15.7735 0.452106 15.5298 0.988347 15.3595 1.40816C13.4651 1.10643 11.5383
+                                1.10643 9.64391 1.40816C9.45393 0.940495 9.23901 0.484433 9.00017 0.0421361C8.99216 0.0274917
+                                8.9801 0.0157372 8.9656 0.00841949C8.9511 0.00110175 8.93482 -0.00143631 8.91892
+                                0.00113909C7.16113 0.319276 5.45021 0.876835 3.82991 1.65906C3.81605 1.66461 3.80445 1.67504
+                                3.7971 1.68858C0.556508 6.77057 -0.332545 11.7279 0.103388 16.623C0.10495 16.6459 0.119013
+                                16.6689 0.1362 16.6836C2.02325 18.1507 4.13396 19.2708 6.37832 19.9962C6.39417 20.0014
+                                6.4112 20.0013 6.42693 19.9957C6.44267 19.99 6.45629 19.9793 6.46582 19.965C6.94707
+                                19.2763 7.37519 18.5498 7.74393 17.7856C7.75162 17.7699 7.75425 17.752 7.75143 17.7345C7.74862
+                                17.7171 7.74051 17.7011 7.72831 17.6889C7.72023 17.6809 7.71065 17.6747 7.70018 17.6708C7.027
+                                17.3993 6.37503 17.0731 5.7502 16.6951C5.73275 16.6847 5.71977 16.6677 5.71395 16.6476C5.70814
+                                16.6274 5.70993 16.6057 5.71895 16.5869C5.72427 16.5747 5.73231 16.564 5.74239 16.5557C5.87364
+                                16.4524 6.00489 16.3442 6.12989 16.236C6.14093 16.2266 6.15418 16.2206 6.16821 16.2186C6.18225
+                                16.2166 6.19655 16.2186 6.20957 16.2245C10.3017 18.1858 14.7314 18.1858 18.7735 16.2245C18.787
+                                16.2183 18.8018 16.2162 18.8164 16.2182C18.831 16.2202 18.8448 16.2264 18.8563 16.236C18.9813
+                                16.3442 19.1126 16.4524 19.2438 16.5557C19.2544 16.5639 19.263 16.5747 19.2687 16.5872C19.2744
+                                16.5996 19.277 16.6134 19.2764 16.6272C19.2758 16.641 19.2719 16.6544 19.2651 16.6663C19.2584
+                                16.6781 19.2489 16.688 19.2376 16.6951C18.6142 17.0765 17.9614 17.4024 17.286 17.6692C17.2752
+                                17.6733 17.2655 17.6798 17.2574 17.6883C17.2493 17.6968 17.243 17.7071 17.2391 17.7184C17.2355
+                                17.7294 17.2341 17.741 17.2349 17.7525C17.2357 17.7641 17.2387 17.7754 17.2438 17.7856C17.6188
+                                18.5482 18.0485 19.2763 18.5204 19.965C18.5299 19.9793 18.5435 19.99 18.5593 19.9957C18.575
+                                20.0013 18.592 20.0014 18.6079 19.9962C20.856 19.2731 22.9701 18.1528 24.8594 16.6836C24.8688
+                                16.6768 24.8767 16.6677 24.8824 16.6572C24.8881 16.6467 24.8914 16.635 24.8922 16.623C25.4141
+                                10.9637 24.0188 6.04738 21.1954 1.69022C21.1925 1.68302 21.1883 1.67653 21.1829 1.67116C21.1775
+                                1.66579 21.1711 1.66167 21.1641 1.65906ZM8.35486 13.6417C7.12206 13.6417 6.10801 12.4544 6.10801
+                                10.9982C6.10801 9.54032 7.10331 8.35305 8.35486 8.35305C9.61579 8.35305 10.6205 9.55016 10.6017
+                                10.9982C10.6017 12.4544 9.60641 13.6417 8.35486 13.6417ZM16.661 13.6417C15.4298 13.6417 14.4142
+                                12.4544 14.4142 10.9982C14.4142 9.54032 15.4095 8.35305 16.661 8.35305C17.922 8.35305
+                                18.9282 9.55016 18.9079 10.9982C18.9079 12.4544 17.922 13.6417 16.661 13.6417Z"
+                                      fill="#ABB2BF"/>
+                            </svg>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 16C16 15.1159 16.3687 14.2681 17.0251 13.643C17.6815 13.0179 18.5717 12.6667 19.5
+                            12.6667C20.4283 12.6667 21.3185 13.0179 21.9749 13.643C22.6313 14.2681 23 15.1159 23 16C23
+                            16.8841 22.6313 17.7319 21.9749 18.357C21.3185 18.9821 20.4283 19.3333 19.5 19.3333C18.5717
+                            19.3333 17.6815 18.9821 17.0251 18.357C16.3687 17.7319 16 16.8841 16 16ZM9 22.6667C9 21.7826
+                            9.36875 20.9348 10.0251 20.3096C10.6815 19.6845 11.5717 19.3333 12.5 19.3333H16V22.6667C16
+                            23.5507 15.6313 24.3986 14.9749 25.0237C14.3185 25.6488 13.4283 26 12.5 26C11.5717 26 10.6815
+                            25.6488 10.0251 25.0237C9.36875 24.3986 9 23.5507 9 22.6667ZM16 6V12.6667H19.5C20.4283 12.6667
+                            21.3185 12.3155 21.9749 11.6904C22.6313 11.0652 23 10.2174 23 9.33333C23 8.44928 22.6313 7.60143
+                            21.9749 6.97631C21.3185 6.35119 20.4283 6 19.5 6H16ZM9 9.33333C9 10.2174 9.36875 11.0652 10.0251
+                            11.6904C10.6815 12.3155 11.5717 12.6667 12.5 12.6667H16V6H12.5C11.5717 6 10.6815 6.35119 10.0251
+                            6.97631C9.36875 7.60143 9 8.44928 9 9.33333ZM9 16C9 16.8841 9.36875 17.7319 10.0251 18.357C10.6815
+                            18.9821 11.5717 19.3333 12.5 19.3333H16V12.6667H12.5C11.5717 12.6667 10.6815 13.0179 10.0251
+                            13.643C9.36875 14.2681 9 15.1159 9 16Z" fill="#ABB2BF"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__logo">
+                <span class="header__logo-name">Elias</span>
+            </div>
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li>
+                        <a class="header__navigation-link" href="#"><span>#</span>home</a>
+                    </li>
+                    <li>
+                        <a class="header__navigation-link" href="#projects"><span>#</span>works</a>
+                    </li>
+                    <li>
+                        <a class="header__navigation-link" href="#about"><span>#</span>about-me</a>
+                    </li>
+                    <li>
+                        <a class="header__navigation-link" href="#contacts"><span>#</span>contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger">
+                <span class="header__burger-btn open"></span>
+                <span class="header__burger-btn open"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+
+        <div class="modal__container">
+            <div class="modal__form-wrapper">
+                <button class="modal_close-btn"></button>
+                <form action="#" class="form">
+                    <fieldset class="input__group">
+                        <label class="placeholder">
+                            <input class="input input__name" type="text" placeholder="Name">
+                        </label>
+
+                        <label class="placeholder">
+                            <input class="input" type="email" placeholder="Email">
+                        </label>
+                    </fieldset>
+                    <label class="placeholder">
+                        <input class="input input__email" type="text" placeholder="Email">
+                    </label>
+                    <textarea class="input input__text" placeholder="Message"></textarea>
+                    <button type="submit" class="form__btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container hero__container">
+            <div class="hero__wrapper">
+                <div class="hero__info">
+                    <h1 class="hero__title">Elias is a <span>web designer</span> and <span>front-end developer</span></h1>
+                    <span class="sss sss-1">Elias is a <span>web designer</span> and <span>front-end developer</span></span>
+                    <span class="sss sss-2">Elias is a <span>web designer</span> and <span>front-end developer</span></span>
+                    <p class="hero__text">
+                        He crafts responsive websites where technologies meet creativity
+                    </p>
+                    <button class="hero__btn">Contact me!!</button>
+                </div>
+                <div class="hero__bg">
+                    <div class="hero__bg-1">
+                        <img class="hero__bg-svg" src="img/bg1.svg" alt="">
+                        <div class="hero__bg-dot"></div>
+                        <p class="hero__bg-text">Currently working on <span>Portfolio</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__quote-wrapper">
+                <blockquote class="hero__quote-block">
+                    <q class="hero__quote-text">With great power comes great electricity bill</q>
+                    <cite class="hero__quote-author">- Dr. Who</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects__wrapper">
+                <div class="projects__title-flex">
+                    <h2 class="projects__title"><span>#</span>projects</h2>
+                    <button class="projects__link-next" href="#">View next ~~></button>
+
+                </div>
+                <div class="projects__block">
+                    <article class="projects__card">
+                        <img src="img/nodes.png" alt="my project">
+                        <p class="projects__skills">HTML SCSS Python Flask</p>
+                        <h3 class="projects__card-title">ChertNodes</h3>
+                        <p class="projects__card-name">Minecraft servers hosting</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                    <article class="projects__card">
+                        <img src="img/protect.png" alt="my project">
+                        <p class="projects__skills">React Express Node.js </p>
+                        <h3 class="projects__card-title">ProtectX</h3>
+                        <p class="projects__card-name">Discord anti-crash bot</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                    <article class="projects__card">
+                        <img src="img/kahoot.png" alt="my project">
+                        <p class="projects__skills">CSS Express Node.js</p>
+                        <h3 class="projects__card-title">Kahoot Answers</h3>
+                        <p class="projects__card-name">Get answers to your kahoot quiz</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                </div>
+
+                <div class="projects__block">
+                    <article class="projects__card">
+                        <img src="img/cat.png" alt="my project">
+                        <p class="projects__skills">HTML CSS JS</p>
+                        <h3 class="projects__card-title">Kotik Bot</h3>
+                        <p class="projects__card-name">Multi-functional discord bot</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                    <article class="projects__card">
+                        <img src="img/portfolio.png" alt="my project">
+                        <p class="projects__skills">Vue TS Less</p>
+                        <h3 class="projects__card-title">Portfolio</h3>
+                        <p class="projects__card-name">You’re using it rn</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                    <article class="projects__card">
+                        <img src="img/protect.png" alt="my project">
+                        <p class="projects__skills">React Express Node.js </p>
+                        <h3 class="projects__card-title">ProtectX</h3>
+                        <p class="projects__card-name">Discord anti-crash bot</p>
+                        <a class="projects__card-link" href="#">Live <~></a>
+                        <button class="projects__card-btn" type="button">Cached >=</button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <div class="skills__wrapper">
+                <h2 class="skills__title"><span>#</span>skills</h2>
+                <div class="skills__box">
+                    <div class="skills__dec"></div>
+                    <ul class="skills__list">
+                        <li class="skills__item skills__item-1">
+                            <h3 class="skills__title-my">Languages</h3>
+                            <p class="skills__text">TypeScript Lua Python JavaScript</p>
+                        </li>
+                        <li class="skills__item skills__item-2">
+                            <h3 class="skills__title-my">Databases</h3>
+                            <p class="skills__text">SQLite PostgreSQL Mongo</p>
+                        </li>
+                        <li class="skills__item skills__item-3">
+                            <h3 class="skills__title-my">Other</h3>
+                            <p class="skills__text">HTML CSS EJS SCSS REST Jinja</p>
+                        </li>
+                        <li class="skills__item skills__item-4">
+                            <h3 class="skills__title-my">Tools</h3>
+                            <p class="skills__text">VSCode Neovim Linux Figma XFCE Arch Git Font Awesome</p>
+                        </li>
+                        <li class="skills__item skills__item-5">
+                            <h3 class="skills__title-my">Frameworks</h3>
+                            <p class="skills__text">React Vue Disnake Discord.js Flask Express.js</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <h2 class="about__title"><span>#</span>about-me</h2>
+                <div class="about__box">
+                    <div class="about__info">
+                        <p>Hello, i’m Elias!</p>
+                        <p>
+                            I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive
+                            websites from scratch and raise them into modern user-friendly web experiences.
+                        </p>
+                        <p>
+                            Transforming my creativity and knowledge into a websites has been my passion for over a
+                            year.
+                            I have been helping various clients to establish their presence online. I always strive to
+                            learn about the newest technologies and frameworks.
+                        </p>
+                        <button class="about__btn" type="button">Read more -></button>
+                    </div>
+                    <div class="about__bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <h2 class="contacts__title"><span>#</span>contacts</h2>
+                <div class="contacts__box">
+                    <p class="contacts__info">
+                        I’m interested in freelance opportunities. However, if you have other request or question,
+                        don’t hesitate to contact me
+                    </p>
+                    <div class="contacts__address">
+                        <h3 class="contacts__address-title">Message me here</h3>
+                        <address class="contacts__disc">
+                            <a href="#">!Elias#3519</a>
+                        </address>
+                        <address class="contacts__mail">
+                            <a href="mailto:xxx@gmail.com">elias@mail.me</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__box">
+                <div class="footer__info">
+                    <p class="footer__logo">Elias</p>
+                    <p class="footer__text">Web designer and front-end developer</p>
+                </div>
+                <div class="footer__media">
+                    <h3 class="footer__title">Media</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__social-link" href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 6C9.69875 6 5 10.5882 5 16.2529C5 20.7899 8.00562 24.6219 12.1794
+                            25.9804C12.7044 26.0701 12.9012 25.7625 12.9012 25.4934C12.9012 25.2499 12.8881 24.4425
+                            12.8881 23.5838C10.25 24.058 9.5675 22.9558 9.3575 22.3791C9.23938 22.0843 8.7275 21.1743
+                            8.28125 20.9308C7.91375 20.7386 7.38875 20.2644 8.26813 20.2516C9.095 20.2388 9.68563 20.9949
+                            9.8825 21.3025C10.8275 22.8533 12.3369 22.4175 12.9406 22.1484C13.0325 21.4819 13.3081 21.0334
+                            13.61 20.777C11.2737 20.5207 8.8325 19.6364 8.8325 15.7147C8.8325 14.5997 9.23938 13.6769
+                            9.90875 12.9592C9.80375 12.7029 9.43625 11.6519 10.0138 10.2422C10.0138 10.2422 10.8931
+                            9.97301 12.9012 11.2931C13.7413 11.0624 14.6338 10.947 15.5263 10.947C16.4188 10.947 17.3113
+                            11.0624 18.1513 11.2931C20.1594 9.9602 21.0387 10.2422 21.0387 10.2422C21.6163 11.6519 21.2488
+                            12.7029 21.1438 12.9592C21.8131 13.6769 22.22 14.5868 22.22 15.7147C22.22 19.6492 19.7656
+                            20.5207 17.4294 20.777C17.81 21.0975 18.1381 21.7126 18.1381 22.6738C18.1381 24.0452 18.125
+                            25.1474 18.125 25.4934C18.125 25.7625 18.3219 26.0829 18.8469 25.9804C20.9314 25.2935 22.7428
+                            23.9854 24.026 22.2403C25.3092 20.4953 25.9996 18.4012 26 16.2529C26 10.5882 21.3013 6 15.5
+                            6Z" fill="#ABB2BF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__social-link" href="#">
+                                <svg width="32" height="20" viewBox="0 0 25 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.1641 1.65906C19.543 0.878258 17.8325 0.320987 16.0751 0.00113909C16.0592
+                                -0.00167518 16.0428 0.000755409 16.0283 0.00809674C16.0137 0.0154381 16.0017 0.0273296
+                                15.9938 0.0421361C15.7735 0.452106 15.5298 0.988347 15.3595 1.40816C13.4651 1.10643 11.5383
+                                1.10643 9.64391 1.40816C9.45393 0.940495 9.23901 0.484433 9.00017 0.0421361C8.99216 0.0274917
+                                8.9801 0.0157372 8.9656 0.00841949C8.9511 0.00110175 8.93482 -0.00143631 8.91892
+                                0.00113909C7.16113 0.319276 5.45021 0.876835 3.82991 1.65906C3.81605 1.66461 3.80445 1.67504
+                                3.7971 1.68858C0.556508 6.77057 -0.332545 11.7279 0.103388 16.623C0.10495 16.6459 0.119013
+                                16.6689 0.1362 16.6836C2.02325 18.1507 4.13396 19.2708 6.37832 19.9962C6.39417 20.0014
+                                6.4112 20.0013 6.42693 19.9957C6.44267 19.99 6.45629 19.9793 6.46582 19.965C6.94707
+                                19.2763 7.37519 18.5498 7.74393 17.7856C7.75162 17.7699 7.75425 17.752 7.75143 17.7345C7.74862
+                                17.7171 7.74051 17.7011 7.72831 17.6889C7.72023 17.6809 7.71065 17.6747 7.70018 17.6708C7.027
+                                17.3993 6.37503 17.0731 5.7502 16.6951C5.73275 16.6847 5.71977 16.6677 5.71395 16.6476C5.70814
+                                16.6274 5.70993 16.6057 5.71895 16.5869C5.72427 16.5747 5.73231 16.564 5.74239 16.5557C5.87364
+                                16.4524 6.00489 16.3442 6.12989 16.236C6.14093 16.2266 6.15418 16.2206 6.16821 16.2186C6.18225
+                                16.2166 6.19655 16.2186 6.20957 16.2245C10.3017 18.1858 14.7314 18.1858 18.7735 16.2245C18.787
+                                16.2183 18.8018 16.2162 18.8164 16.2182C18.831 16.2202 18.8448 16.2264 18.8563 16.236C18.9813
+                                16.3442 19.1126 16.4524 19.2438 16.5557C19.2544 16.5639 19.263 16.5747 19.2687 16.5872C19.2744
+                                16.5996 19.277 16.6134 19.2764 16.6272C19.2758 16.641 19.2719 16.6544 19.2651 16.6663C19.2584
+                                16.6781 19.2489 16.688 19.2376 16.6951C18.6142 17.0765 17.9614 17.4024 17.286 17.6692C17.2752
+                                17.6733 17.2655 17.6798 17.2574 17.6883C17.2493 17.6968 17.243 17.7071 17.2391 17.7184C17.2355
+                                17.7294 17.2341 17.741 17.2349 17.7525C17.2357 17.7641 17.2387 17.7754 17.2438 17.7856C17.6188
+                                18.5482 18.0485 19.2763 18.5204 19.965C18.5299 19.9793 18.5435 19.99 18.5593 19.9957C18.575
+                                20.0013 18.592 20.0014 18.6079 19.9962C20.856 19.2731 22.9701 18.1528 24.8594 16.6836C24.8688
+                                16.6768 24.8767 16.6677 24.8824 16.6572C24.8881 16.6467 24.8914 16.635 24.8922 16.623C25.4141
+                                10.9637 24.0188 6.04738 21.1954 1.69022C21.1925 1.68302 21.1883 1.67653 21.1829 1.67116C21.1775
+                                1.66579 21.1711 1.66167 21.1641 1.65906ZM8.35486 13.6417C7.12206 13.6417 6.10801 12.4544 6.10801
+                                10.9982C6.10801 9.54032 7.10331 8.35305 8.35486 8.35305C9.61579 8.35305 10.6205 9.55016 10.6017
+                                10.9982C10.6017 12.4544 9.60641 13.6417 8.35486 13.6417ZM16.661 13.6417C15.4298 13.6417 14.4142
+                                12.4544 14.4142 10.9982C14.4142 9.54032 15.4095 8.35305 16.661 8.35305C17.922 8.35305
+                                18.9282 9.55016 18.9079 10.9982C18.9079 12.4544 17.922 13.6417 16.661 13.6417Z"
+                                          fill="#ABB2BF"/>
+                                </svg>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__social-link" href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 16C16 15.1159 16.3687 14.2681 17.0251 13.643C17.6815 13.0179 18.5717 12.6667 19.5
+                            12.6667C20.4283 12.6667 21.3185 13.0179 21.9749 13.643C22.6313 14.2681 23 15.1159 23 16C23
+                            16.8841 22.6313 17.7319 21.9749 18.357C21.3185 18.9821 20.4283 19.3333 19.5 19.3333C18.5717
+                            19.3333 17.6815 18.9821 17.0251 18.357C16.3687 17.7319 16 16.8841 16 16ZM9 22.6667C9 21.7826
+                            9.36875 20.9348 10.0251 20.3096C10.6815 19.6845 11.5717 19.3333 12.5 19.3333H16V22.6667C16
+                            23.5507 15.6313 24.3986 14.9749 25.0237C14.3185 25.6488 13.4283 26 12.5 26C11.5717 26 10.6815
+                            25.6488 10.0251 25.0237C9.36875 24.3986 9 23.5507 9 22.6667ZM16 6V12.6667H19.5C20.4283 12.6667
+                            21.3185 12.3155 21.9749 11.6904C22.6313 11.0652 23 10.2174 23 9.33333C23 8.44928 22.6313 7.60143
+                            21.9749 6.97631C21.3185 6.35119 20.4283 6 19.5 6H16ZM9 9.33333C9 10.2174 9.36875 11.0652 10.0251
+                            11.6904C10.6815 12.3155 11.5717 12.6667 12.5 12.6667H16V6H12.5C11.5717 6 10.6815 6.35119 10.0251
+                            6.97631C9.36875 7.60143 9 8.44928 9 9.33333ZM9 16C9 16.8841 9.36875 17.7319 10.0251 18.357C10.6815
+                            18.9821 11.5717 19.3333 12.5 19.3333H16V12.6667H12.5C11.5717 12.6667 10.6815 13.0179 10.0251
+                            13.643C9.36875 14.2681 9 15.1159 9 16Z" fill="#ABB2BF"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">&copy; Copyright 2022. Made by Elias</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
